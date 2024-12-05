@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Swiper Container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="image-area">
+          <img src="images/image3.jpg" alt="Slide 1">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-area">
+          <img src="images/image1.jpg" alt="Slide 2">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-area">
+          <img src="images/image2.jpg" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="addText">Add Text</button>
+    <select id="fontStyle">
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Georgia">Georgia</option>
+    </select>
+    <button><input type="color" id="colorPicker" value="#000000"> font color</button>
+    <button id="deleteText">Delete Text</button>
+  </div>
+
+  <!-- Resize Controls -->
+  <div class="resize-controls">
+    <label for="resizeFontSize">Font Size:</label>
+    <input type="number" id="resizeFontSize" value="16" min="8" max="100" step="1" />
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
